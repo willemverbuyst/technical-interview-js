@@ -15,6 +15,7 @@ Different exercises to prepare for a techical interview.
 - Get unique elements from two arrays
 - Sort an array of objects, by value
 - Remove elements from array
+- Unite arrays without duplicates
 
 ### Numbers
 

@@ -63,5 +63,16 @@ const removeElements = (arr, ...args) => {
 };
 
 console.log(removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4));
+
 // returns
 // [ 1, 2, 1, 2, 5, 1 ]
+
+/***************************************************/
+// Unite arrays without duplicates
+const uniteUniqueElements = (...args) => [...new Set(args.flat())];
+
+console.log(uniteUniqueElements([1, 3, 'two'], [5, 'two', 1, 4], ['two', 1]));
+// returns
+// [ 1, 3, 'two', 5, 4 ]
+
+/***************************************************/
