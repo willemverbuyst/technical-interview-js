@@ -5,7 +5,7 @@ const splitString = (str) => {
 
 console.log(splitString('Vanilla JavaScript'));
 
-// Split Characters in string
+// Split characters in string
 const splitCharacters = (str) => {
   return str.split('');
 };

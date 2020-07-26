@@ -7,12 +7,13 @@ Different exercises to prepare for a techical interview.
 ### Strings
 
 - Split string
-- Split Characters in string
+- Split characters in string
 - Reverse a string
 
 ### Arrays
 
 - Get unique elements from two arrays
+- Sort an array of objects, by value
 
 ### Numbers
 

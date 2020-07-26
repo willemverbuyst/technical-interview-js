@@ -16,3 +16,25 @@ const getUniqueElements_2 = (arr1, arr2) =>
 
 console.log(getUniqueElements_2([1, 2, 3, 4, 7], [2, 3, 4, 5, 6]));
 console.log(getUniqueElements_2([2, 3, 4], [2, 3, 4]));
+
+// Sort an array of objects, by value
+const persons = [
+  {
+    name: 'Jack',
+    age: 23,
+  },
+  {
+    name: 'Sifan',
+    age: 34,
+  },
+  {
+    name: 'Hilary',
+    age: 104,
+  },
+];
+
+const sortPersons = (arr, key) => {
+  return arr.sort((a, b) => a[key] - b[key]);
+};
+
+console.log(sortPersons(persons, 'age'));
