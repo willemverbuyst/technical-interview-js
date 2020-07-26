@@ -38,3 +38,10 @@ const sortPersons = (arr, key) => {
 };
 
 console.log(sortPersons(persons, 'age'));
+
+// Remove elements from array
+const removeElements = (arr, ...args) => {
+  return arr.filter((el) => !args.includes(el));
+};
+
+console.log(removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4));
