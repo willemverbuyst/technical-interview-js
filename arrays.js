@@ -1,3 +1,4 @@
+/***************************************************/
 // Get unique elements from two arrays
 // Solution 1
 const getUniqueElements_1 = (arr1, arr2) =>
@@ -8,6 +9,10 @@ const getUniqueElements_1 = (arr1, arr2) =>
 console.log(getUniqueElements_1([1, 2, 3, 4, 7], [2, 3, 4, 5, 6]));
 console.log(getUniqueElements_1([2, 3, 4], [2, 3, 4]));
 
+// returns
+// [ 1, 7, 5, 6 ]
+// []
+
 // Solution 2
 const getUniqueElements_2 = (arr1, arr2) =>
   [...arr1, ...arr2].filter(
@@ -17,6 +22,11 @@ const getUniqueElements_2 = (arr1, arr2) =>
 console.log(getUniqueElements_2([1, 2, 3, 4, 7], [2, 3, 4, 5, 6]));
 console.log(getUniqueElements_2([2, 3, 4], [2, 3, 4]));
 
+// returns
+// [ 1, 7, 5, 6 ]
+// []
+
+/***************************************************/
 // Sort an array of objects, by value
 const persons = [
   {
@@ -39,9 +49,19 @@ const sortPersons = (arr, key) => {
 
 console.log(sortPersons(persons, 'age'));
 
+// returns
+// [
+// { name: 'Jack', age: 23 },
+// { name: 'Sifan', age: 34 },
+// { name: 'Hilary', age: 104 }
+// ]
+
+/***************************************************/
 // Remove elements from array
 const removeElements = (arr, ...args) => {
   return arr.filter((el) => !args.includes(el));
 };
 
 console.log(removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4));
+// returns
+// [ 1, 2, 1, 2, 5, 1 ]

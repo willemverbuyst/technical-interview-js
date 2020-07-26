@@ -1,3 +1,4 @@
+/***************************************************/
 // Sum all numbers in a range
 function sumAll(arr) {
   let total = 0;
@@ -11,3 +12,8 @@ function sumAll(arr) {
 }
 
 console.log(sumAll([1, 5]));
+
+// returns
+// 15
+
+/***************************************************/
