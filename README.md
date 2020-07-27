@@ -9,6 +9,7 @@ Different exercises to prepare for a techical interview.
 - Split string
 - Split characters in string
 - Reverse a string
+- Are the parantheses balanced?
 
 ### Arrays
 

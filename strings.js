@@ -37,3 +37,29 @@ console.log(reverseString('Vanilla JavaScript'));
 // tpircSavaJ allinaV
 
 /***************************************************/
+// Are the parantheses balanced?
+const areParenthesisBalanced = (str) => {
+  return !str.split('').reduce((a, b) => {
+    if (b === '(' || b === '{' || b === '[') {
+      return ++a;
+    } else if (b === ')' || b === '}' || b === ']') {
+      return --a;
+    }
+
+    return a;
+  }, 0);
+};
+
+console.log(areParenthesisBalanced('[()]{}{[()()]()}'));
+console.log(
+  areParenthesisBalanced(
+    '[{()()}({[]})]({}[({})])((((((()[])){}))[]{{{({({({{{{{{}}}}}})})})}}}))[][][]'
+  )
+);
+console.log(areParenthesisBalanced('({(()))}}'));
+// returns
+// true
+// true
+// false
+
+/***************************************************/
