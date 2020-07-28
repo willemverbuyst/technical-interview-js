@@ -10,6 +10,7 @@ Different exercises to prepare for a techical interview.
 - Split characters in string
 - Reverse a string
 - Are the parantheses balanced?
+- Find missing letter
 
 ### Arrays
 
