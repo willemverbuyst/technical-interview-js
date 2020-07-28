@@ -72,7 +72,29 @@ console.log(removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4));
 const uniteUniqueElements = (...args) => [...new Set(args.flat())];
 
 console.log(uniteUniqueElements([1, 3, 'two'], [5, 'two', 1, 4], ['two', 1]));
+
 // returns
 // [ 1, 3, 'two', 5, 4 ]
+
+/***************************************************/
+// Pair DNA - freeCodeCamp
+const pairDNA = (str) => {
+  const DNApairs = {
+    A: 'T',
+    T: 'A',
+    C: 'G',
+    G: 'C',
+  };
+  return str.split('').map((l) => [l, DNApairs[l]]);
+};
+
+console.log(pairDNA('GCG'));
+console.log(pairDNA('TTGAG'));
+console.log(pairDNA('CTCTA'));
+
+// returns
+//  [["G", "C"], ["C","G"],["G", "C"]]
+// [["T","A"],["T","A"],["G","C"],["A","T"],["G","C"]]
+// [["C","G"],["T","A"],["C","G"],["T","A"],["A","T"]]
 
 /***************************************************/
