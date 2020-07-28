@@ -11,7 +11,7 @@ console.log(changeToSpinalCase("Let's_get_things_done"));
 console.log(changeToSpinalCase('NoWayJosè'));
 
 // returns
-// let's_get_things_done
+// let's-get-things-done
 // no-way-josè
 
 /***************************************************/
