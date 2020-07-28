@@ -25,6 +25,7 @@ Different exercises to prepare for a techical interview.
 ### Regex
 
 - Return string in spinal case
+- Replace word in string, preserve capital
 
 ## How to use?
 
