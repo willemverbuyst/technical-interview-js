@@ -27,6 +27,7 @@ Different exercises to prepare for a techical interview.
 
 - Sum all numbers in a range
 - Reverse number
+- FizzBuzz
 
 ### Regex
 
