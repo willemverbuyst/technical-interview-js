@@ -11,6 +11,7 @@ Different exercises to prepare for a techical interview.
 - Reverse a string
 - Are the parantheses balanced?
 - Find missing letter
+- Validate palindrome
 
 ### Arrays
 
@@ -23,6 +24,7 @@ Different exercises to prepare for a techical interview.
 ### Numbers
 
 - Sum all numbers in a range
+- Reverse number
 
 ### Regex
 

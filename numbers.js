@@ -17,3 +17,12 @@ console.log(sumAll([1, 5]));
 // 15
 
 /***************************************************/
+// Reverse number - Traversy Media
+const reverseNumber = (num) =>
+  parseInt(num.toString().split('').reverse().join(''));
+
+console.log(reverseNumber(3456));
+console.log(reverseNumber(123));
+
+// returns
+// 6543
