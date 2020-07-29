@@ -12,6 +12,7 @@ Different exercises to prepare for a techical interview.
 - Are the parantheses balanced?
 - Find missing letter
 - Validate palindrome
+- Capitalize first letters
 
 ### Arrays
 

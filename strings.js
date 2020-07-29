@@ -99,3 +99,25 @@ console.log(isPalindrome('ferrari'));
 // returns
 // true
 // false
+
+/***************************************************/
+// Capitalize first letters - Traversy Media
+// Solution 1
+const capitalizeFirstLetters_1 = (str) =>
+  str
+    .split(' ')
+    .map((word) => word[0].toUpperCase() + word.substr(1))
+    .join(' ');
+
+// Solution 2 - regex
+const capitalizeFirstLetters_2 = (str) =>
+  str.replace(/\b[a-z]/gi, (letter) => letter.toUpperCase());
+
+console.log(capitalizeFirstLetters_1('I love javascript'));
+console.log(capitalizeFirstLetters_1('today is you lucky day'));
+console.log(capitalizeFirstLetters_2('I love javascript'));
+console.log(capitalizeFirstLetters_2('today is you lucky day'));
+
+// returns
+// I Love Javascript
+// Today Is Your Lucky Day
