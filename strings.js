@@ -89,4 +89,13 @@ console.log(findMissingLetter('abcd'));
 // undefined
 
 /***************************************************/
-// Validate palindrom - Treaversy Media
+// Validate palindrome - Traversy Media
+const isPalindrome = (str) =>
+  str === str.split('').reduce((revString, char) => char + revString);
+
+console.log(isPalindrome('racecar'));
+console.log(isPalindrome('ferrari'));
+
+// returns
+// true
+// false
