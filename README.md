@@ -13,6 +13,7 @@ Different exercises to prepare for a techical interview.
 - Find missing letter
 - Validate palindrome
 - Capitalize first letters
+- Find max characters
 
 ### Arrays
 
