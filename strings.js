@@ -17,12 +17,6 @@ const splitCharacters = (str) => {
 
 console.log(splitCharacters('Vanilla JavaScript'));
 
-/***************************************************/
-// Reverse a string
-const reverseString = (str) => {
-  return str.split('').reverse().join('');
-};
-
 // returns
 // [
 //   'V', 'a', 'n', 'i', 'l',
@@ -31,7 +25,19 @@ const reverseString = (str) => {
 //   'i', 'p', 't'
 // ]
 
-console.log(reverseString('Vanilla JavaScript'));
+/***************************************************/
+// Reverse a string
+// Solution 1
+const reverseString_1 = (str) => {
+  return str.split('').reverse().join('');
+};
+
+// Solution 2 - Traversy Media
+const reverseString_2 = (str) =>
+  str.split('').reduce((reversedString, char) => char + reversedString, '');
+
+console.log(reverseString_1('Vanilla JavaScript'));
+console.log(reverseString_2('Vanilla JavaScript'));
 
 // returns
 // tpircSavaJ allinaV
@@ -83,3 +89,4 @@ console.log(findMissingLetter('abcd'));
 // undefined
 
 /***************************************************/
+// Validate palindrom - Treaversy Media
