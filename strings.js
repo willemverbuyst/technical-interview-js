@@ -1,28 +1,9 @@
 const stringFunctions = {
   // Split string
   splitString: (str) => str.split(' '),
+  // Split characters in string
+  splitCharacters: (str) => str.split(''),
 };
-
-// console.log(splitString('Vanilla JavaScript'));
-
-// returns
-// [ 'Vanilla', 'JavaScript' ]
-
-// /***************************************************/
-// // Split characters in string
-// const splitCharacters = (str) => {
-//   return str.split('');
-// };
-
-// console.log(splitCharacters('Vanilla JavaScript'));
-
-// // returns
-// // [
-// //   'V', 'a', 'n', 'i', 'l',
-// //   'l', 'a', ' ', 'J', 'a',
-// //   'v', 'a', 'S', 'c', 'r',
-// //   'i', 'p', 't'
-// // ]
 
 // /***************************************************/
 // // Reverse a string
