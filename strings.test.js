@@ -47,3 +47,11 @@ test('reverseString_2 "Vanilla JavaScript" returns "tpircSavaJ allinaV"', () => 
     'tpircsavaj allinav'
   );
 });
+
+test('isPalindrome "racecar" returns true', () => {
+  expect(stringFunctions.isPalindrome('racecar')).toBe(true);
+});
+
+test('isPalindrome "ferrari" returns false', () => {
+  expect(stringFunctions.isPalindrome('ferrari')).toBe(false);
+});

@@ -9,15 +9,10 @@ const stringFunctions = {
   // Solution 2 - Traversy Media
   reverseString_2: (str) =>
     str.split('').reduce((reversedString, char) => char + reversedString, ''),
+  // Validate palindrome - Traversy Media
+  isPalindrome: (str) =>
+    str === str.split('').reduce((revString, char) => char + revString),
 };
-
-// /***************************************************/
-
-// console.log(reverseString_1('Vanilla JavaScript'));
-// console.log(reverseString_2('Vanilla JavaScript'));
-
-// // returns
-// // tpircSavaJ allinaV
 
 // /***************************************************/
 // // Are the parantheses balanced?
@@ -66,16 +61,6 @@ const stringFunctions = {
 // // undefined
 
 // /***************************************************/
-// // Validate palindrome - Traversy Media
-// const isPalindrome = (str) =>
-//   str === str.split('').reduce((revString, char) => char + revString);
-
-// console.log(isPalindrome('racecar'));
-// console.log(isPalindrome('ferrari'));
-
-// // returns
-// // true
-// // false
 
 // /***************************************************/
 // // Capitalize first letters - Traversy Media
