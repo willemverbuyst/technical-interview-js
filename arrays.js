@@ -1,17 +1,12 @@
-/***************************************************/
-// Get unique elements from two arrays
-// Solution 1
-const getUniqueElements_1 = (arr1, arr2) =>
-  [...arr1, ...arr2].filter(
-    (element) => (arr1.indexOf(element) === -1) | (arr2.indexOf(element) === -1)
-  );
-
-console.log(getUniqueElements_1([1, 2, 3, 4, 7], [2, 3, 4, 5, 6]));
-console.log(getUniqueElements_1([2, 3, 4], [2, 3, 4]));
-
-// returns
-// [ 1, 7, 5, 6 ]
-// []
+const arrayFunctions = {
+  // Get unique elements from two arrays
+  // Solution 1
+  getUniqueElements_1: (arr1, arr2) =>
+    [...arr1, ...arr2].filter(
+      (element) =>
+        (arr1.indexOf(element) === -1) | (arr2.indexOf(element) === -1)
+    ),
+};
 
 // Solution 2
 const getUniqueElements_2 = (arr1, arr2) =>
@@ -98,3 +93,5 @@ console.log(pairDNA('CTCTA'));
 // [["C","G"],["T","A"],["C","G"],["T","A"],["A","T"]]
 
 /***************************************************/
+
+module.exports = arrayFunctions;

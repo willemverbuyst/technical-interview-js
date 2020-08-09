@@ -49,19 +49,4 @@ const stringFunctions = {
     }, 0),
 };
 
-// /***************************************************/
-
-// console.log(areParenthesisBalanced('[()]{}{[()()]()}'));
-// console.log(
-//   areParenthesisBalanced(
-//     '[{()()}({[]})]({}[({})])((((((()[])){}))[]{{{({({({{{{{{}}}}}})})})}}}))[][][]'
-//   )
-// );
-// console.log(areParenthesisBalanced('({(()))}}'));
-
-// // returns
-// // true
-// // true
-// // false
-
 module.exports = stringFunctions;
