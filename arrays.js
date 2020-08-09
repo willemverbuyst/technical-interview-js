@@ -11,6 +11,10 @@ const arrayFunctions = {
     [...arr1, ...arr2].filter(
       (element) => !arr1.includes(element) | !arr2.includes(element)
     ),
+  // Remove elements from array
+  removeElements: (arr, ...args) => {
+    return arr.filter((el) => !args.includes(el));
+  },
 };
 
 /***************************************************/
@@ -44,15 +48,6 @@ console.log(sortPersons(persons, 'age'));
 // ]
 
 /***************************************************/
-// Remove elements from array
-const removeElements = (arr, ...args) => {
-  return arr.filter((el) => !args.includes(el));
-};
-
-console.log(removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4));
-
-// returns
-// [ 1, 2, 1, 2, 5, 1 ]
 
 /***************************************************/
 // Unite arrays without duplicates
