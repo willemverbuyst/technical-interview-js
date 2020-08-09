@@ -26,6 +26,13 @@ test('removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4)) returns [ 1, 2, 1, 2
   ).toEqual([1, 2, 1, 2, 5, 1]);
 });
 
+test('removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4)) not to contain [3, 4]', () => {
+  const excluded = [3, 4];
+  expect(
+    arrayFunctions.removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4)
+  ).toEqual(expect.not.arrayContaining(excluded));
+});
+
 test('removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4)) returns [ 1, 2, 1, 2, 5, 1 ]', () => {
   expect(
     arrayFunctions.removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4)
