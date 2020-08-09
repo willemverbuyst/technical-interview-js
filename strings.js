@@ -22,13 +22,6 @@ const stringFunctions = {
   },
 };
 
-// console.log(findMaxCharacters('javascriptttt'));
-// console.log(findMaxCharacters('goooooood morning'));
-
-// // returns
-// // t
-// // o
-
 // /***************************************************/
 // // Are the parantheses balanced?
 // const areParenthesisBalanced = (str) => {

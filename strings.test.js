@@ -67,6 +67,6 @@ test('findMaxCharacters("goooooood morning") returns o', () => {
   expect(stringFunctions.findMaxCharacters('goooooood morning')).toBe('o');
 });
 
-test('findMaxCharacters("goooooood morning") returns o', () => {
+test('findMaxCharacters() is defined', () => {
   expect(stringFunctions.findMaxCharacters('goooooood morning')).toBeDefined();
 });
