@@ -27,44 +27,8 @@ const arrayFunctions = {
     };
     return str.split('').map((l) => [l, DNApairs[l]]);
   },
+  // Sort an array of objects, by value
+  sortPersons: (arr, key) => arr.sort((a, b) => a[key] - b[key]),
 };
-
-/***************************************************/
-
-/***************************************************/
-// Sort an array of objects, by value
-const persons = [
-  {
-    name: 'Jack',
-    age: 23,
-  },
-  {
-    name: 'Sifan',
-    age: 34,
-  },
-  {
-    name: 'Hilary',
-    age: 104,
-  },
-];
-
-const sortPersons = (arr, key) => {
-  return arr.sort((a, b) => a[key] - b[key]);
-};
-
-console.log(sortPersons(persons, 'age'));
-
-// returns
-// [
-// { name: 'Jack', age: 23 },
-// { name: 'Sifan', age: 34 },
-// { name: 'Hilary', age: 104 }
-// ]
-
-/***************************************************/
-
-/***************************************************/
-
-/***************************************************/
 
 module.exports = arrayFunctions;

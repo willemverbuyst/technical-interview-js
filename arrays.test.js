@@ -81,3 +81,25 @@ test('pairDNA("CTCTA") returns true', () => {
   ];
   expect(arrayFunctions.pairDNA(DNA).length).toEqual(dnaPair.length);
 });
+
+test('sortPersons(persons, "age") sorts object by age-property', () => {
+  const persons = [
+    {
+      name: 'Jack',
+      age: 23,
+    },
+    {
+      name: 'Sifan',
+      age: 34,
+    },
+    {
+      name: 'Hilary',
+      age: 104,
+    },
+  ];
+  expect(arrayFunctions.sortPersons(persons, 'age')).toEqual([
+    { name: 'Jack', age: 23 },
+    { name: 'Sifan', age: 34 },
+    { name: 'Hilary', age: 104 },
+  ]);
+});
