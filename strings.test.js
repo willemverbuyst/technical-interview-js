@@ -94,3 +94,19 @@ test("capitalizeFirstLetters_2('today is your lucky day') returns 'Today Is Your
     stringFunctions.capitalizeFirstLetters_2('today is your lucky day')
   ).toBe('Today Is Your Lucky Day');
 });
+
+test("areParenthesisBalanced('[()]{}{[()()]()}') returns true", () => {
+  expect(stringFunctions.areParenthesisBalanced('[()]{}{[()()]()}')).toBe(true);
+});
+
+test("areParenthesisBalanced('[{()()}({[]})]({}[({})])((((((()[])){}))[]{{{({({({{{{{{}}}}}})})})}}}))[][][]') returns true", () => {
+  expect(
+    stringFunctions.areParenthesisBalanced(
+      '[{()()}({[]})]({}[({})])((((((()[])){}))[]{{{({({({{{{{{}}}}}})})})}}}))[][][]'
+    )
+  ).toBe(true);
+});
+
+test("areParenthesisBalanced('({(()))}}') returns false", () => {
+  expect(stringFunctions.areParenthesisBalanced('({(()))}}')).toBe(false);
+});

@@ -37,21 +37,19 @@ const stringFunctions = {
   // Solution 2 - regex
   capitalizeFirstLetters_2: (str) =>
     str.replace(/\b[a-z]/gi, (letter) => letter.toUpperCase()),
+  // Are the parantheses balanced?
+  areParenthesisBalanced: (str) =>
+    !str.split('').reduce((a, b) => {
+      if (b === '(' || b === '{' || b === '[') {
+        return ++a;
+      } else if (b === ')' || b === '}' || b === ']') {
+        return --a;
+      }
+      return a;
+    }, 0),
 };
 
 // /***************************************************/
-// // Are the parantheses balanced?
-// const areParenthesisBalanced = (str) => {
-//   return !str.split('').reduce((a, b) => {
-//     if (b === '(' || b === '{' || b === '[') {
-//       return ++a;
-//     } else if (b === ')' || b === '}' || b === ']') {
-//       return --a;
-//     }
-
-//     return a;
-//   }, 0);
-// };
 
 // console.log(areParenthesisBalanced('[()]{}{[()()]()}'));
 // console.log(
