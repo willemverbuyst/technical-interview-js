@@ -15,6 +15,8 @@ const arrayFunctions = {
   removeElements: (arr, ...args) => {
     return arr.filter((el) => !args.includes(el));
   },
+  // Unite arrays without duplicates
+  uniteUniqueElements: (...args) => [...new Set(args.flat())],
 };
 
 /***************************************************/
@@ -50,13 +52,6 @@ console.log(sortPersons(persons, 'age'));
 /***************************************************/
 
 /***************************************************/
-// Unite arrays without duplicates
-const uniteUniqueElements = (...args) => [...new Set(args.flat())];
-
-console.log(uniteUniqueElements([1, 3, 'two'], [5, 'two', 1, 4], ['two', 1]));
-
-// returns
-// [ 1, 3, 'two', 5, 4 ]
 
 /***************************************************/
 // Pair DNA - freeCodeCamp

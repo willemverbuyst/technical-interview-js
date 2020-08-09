@@ -31,3 +31,13 @@ test('removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4)) returns [ 1, 2, 1, 2
     arrayFunctions.removeElements([1, 2, 3, 4, 1, 2, 5, 3, 1, 4], 3, 4)
   ).toHaveLength(6);
 });
+
+test('uniteUniqueElements([1, 3, "two"], [5, "two", 1, 4], ["two", 1]) returns [ 1, 3, "two", 5, 4 ]', () => {
+  expect(
+    arrayFunctions.uniteUniqueElements(
+      [1, 3, 'two'],
+      [5, 'two', 1, 4],
+      ['two', 1]
+    )
+  ).toEqual([1, 3, 'two', 5, 4]);
+});
