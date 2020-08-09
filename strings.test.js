@@ -55,3 +55,18 @@ test('isPalindrome "racecar" returns true', () => {
 test('isPalindrome "ferrari" returns false', () => {
   expect(stringFunctions.isPalindrome('ferrari')).toBe(false);
 });
+test('isPalindrome "ferrari" returns false', () => {
+  expect(stringFunctions.isPalindrome('ferrari')).toBe(false);
+});
+
+test('findMaxCharacters("javascriptttt") returns t', () => {
+  expect(stringFunctions.findMaxCharacters('javascriptttt')).toBe('t');
+});
+
+test('findMaxCharacters("goooooood morning") returns o', () => {
+  expect(stringFunctions.findMaxCharacters('goooooood morning')).toBe('o');
+});
+
+test('findMaxCharacters("goooooood morning") returns o', () => {
+  expect(stringFunctions.findMaxCharacters('goooooood morning')).toBeDefined();
+});

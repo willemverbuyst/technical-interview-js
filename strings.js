@@ -12,7 +12,22 @@ const stringFunctions = {
   // Validate palindrome - Traversy Media
   isPalindrome: (str) =>
     str === str.split('').reduce((revString, char) => char + revString),
+  // Find max characters - Traversy Media
+  findMaxCharacters: (str) => {
+    const charObj = {};
+    str.split('').forEach((char) => (charObj[char] = (charObj[char] || 0) + 1));
+    return Object.keys(charObj).reduce((a, b) =>
+      charObj[a] > charObj[b] ? a : b
+    );
+  },
 };
+
+// console.log(findMaxCharacters('javascriptttt'));
+// console.log(findMaxCharacters('goooooood morning'));
+
+// // returns
+// // t
+// // o
 
 // /***************************************************/
 // // Are the parantheses balanced?
@@ -85,20 +100,5 @@ const stringFunctions = {
 // // Today Is Your Lucky Day
 
 // /***************************************************/
-// // Find max characters - Traversy Media
-// const findMaxCharacters = (str) => {
-//   const charObj = {};
-//   str.split('').forEach((char) => (charObj[char] = (charObj[char] || 0) + 1));
-//   return Object.keys(charObj).reduce((a, b) =>
-//     charObj[a] > charObj[b] ? a : b
-//   );
-// };
-
-// console.log(findMaxCharacters('javascriptttt'));
-// console.log(findMaxCharacters('goooooood morning'));
-
-// // returns
-// // t
-// // o
 
 module.exports = stringFunctions;
