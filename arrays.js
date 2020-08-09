@@ -17,7 +17,19 @@ const arrayFunctions = {
   },
   // Unite arrays without duplicates
   uniteUniqueElements: (...args) => [...new Set(args.flat())],
+  // Pair DNA - freeCodeCamp
+  pairDNA: (str) => {
+    const DNApairs = {
+      A: 'T',
+      T: 'A',
+      C: 'G',
+      G: 'C',
+    };
+    return str.split('').map((l) => [l, DNApairs[l]]);
+  },
 };
+
+/***************************************************/
 
 /***************************************************/
 // Sort an array of objects, by value
@@ -52,27 +64,6 @@ console.log(sortPersons(persons, 'age'));
 /***************************************************/
 
 /***************************************************/
-
-/***************************************************/
-// Pair DNA - freeCodeCamp
-const pairDNA = (str) => {
-  const DNApairs = {
-    A: 'T',
-    T: 'A',
-    C: 'G',
-    G: 'C',
-  };
-  return str.split('').map((l) => [l, DNApairs[l]]);
-};
-
-console.log(pairDNA('GCG'));
-console.log(pairDNA('TTGAG'));
-console.log(pairDNA('CTCTA'));
-
-// returns
-//  [["G", "C"], ["C","G"],["G", "C"]]
-// [["T","A"],["T","A"],["G","C"],["A","T"],["G","C"]]
-// [["C","G"],["T","A"],["C","G"],["T","A"],["A","T"]]
 
 /***************************************************/
 

@@ -41,3 +41,31 @@ test('uniteUniqueElements([1, 3, "two"], [5, "two", 1, 4], ["two", 1]) returns [
     )
   ).toEqual([1, 3, 'two', 5, 4]);
 });
+
+test('pairDNA("GCG") returns [["G", "C"], ["C","G"],["G", "C"]]', () => {
+  expect(arrayFunctions.pairDNA('GCG')).toEqual([
+    ['G', 'C'],
+    ['C', 'G'],
+    ['G', 'C'],
+  ]);
+});
+
+test('pairDNA("TTGAG") returns [["T","A"],["T","A"],["G","C"],["A","T"],["G","C"]]', () => {
+  expect(arrayFunctions.pairDNA('TTGAG')).toEqual([
+    ['T', 'A'],
+    ['T', 'A'],
+    ['G', 'C'],
+    ['A', 'T'],
+    ['G', 'C'],
+  ]);
+});
+
+test('pairDNA("CTCTA") returns [["C","G"],["T","A"],["C","G"],["T","A"],["A","T"]]', () => {
+  expect(arrayFunctions.pairDNA('CTCTA')).toEqual([
+    ['C', 'G'],
+    ['T', 'A'],
+    ['C', 'G'],
+    ['T', 'A'],
+    ['A', 'T'],
+  ]);
+});
