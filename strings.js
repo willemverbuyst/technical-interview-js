@@ -3,18 +3,15 @@ const stringFunctions = {
   splitString: (str) => str.split(' '),
   // Split characters in string
   splitCharacters: (str) => str.split(''),
+  // Reverse a string
+  // Solution 1
+  reverseString_1: (str) => str.split('').reverse().join(''),
+  // Solution 2 - Traversy Media
+  reverseString_2: (str) =>
+    str.split('').reduce((reversedString, char) => char + reversedString, ''),
 };
 
 // /***************************************************/
-// // Reverse a string
-// // Solution 1
-// const reverseString_1 = (str) => {
-//   return str.split('').reverse().join('');
-// };
-
-// // Solution 2 - Traversy Media
-// const reverseString_2 = (str) =>
-//   str.split('').reduce((reversedString, char) => char + reversedString, '');
 
 // console.log(reverseString_1('Vanilla JavaScript'));
 // console.log(reverseString_2('Vanilla JavaScript'));
