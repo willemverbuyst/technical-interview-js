@@ -1,0 +1,23 @@
+{
+  "name": "technical-interview-js",
+  "version": "1.0.0",
+  "description": "Different exercises to prepare for a techical interview.",
+  "main": "arrays.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willemverbuyst/technical-interview-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willemverbuyst/technical-interview-js/issues"
+  },
+  "homepage": "https://github.com/willemverbuyst/technical-interview-js#readme",
+  "devDependencies": {
+    "jest": "^26.2.2"
+  }
+}
