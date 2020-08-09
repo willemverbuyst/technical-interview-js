@@ -82,3 +82,9 @@ test("findMissingLetter('ghijklmnpqrstu') returns 'o'", () => {
 test("findMissingLetter('abcd') returns undefined", () => {
   expect(stringFunctions.findMissingLetter('abcd')).toBe(undefined);
 });
+
+test("capitalizeFirstLetters_1('I love javascript') returns 'I Love Javascript'", () => {
+  expect(stringFunctions.capitalizeFirstLetters_1('I love javascript')).toBe(
+    'I Love Javascript'
+  );
+});

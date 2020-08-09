@@ -27,6 +27,13 @@ const stringFunctions = {
     const end = alpha.indexOf(str[str.length - 1]);
     return alpha.slice(start, end + 1).filter((l) => str.indexOf(l) === -1)[0];
   },
+  // Capitalize first letters - Traversy Media
+  // Solution 1
+  capitalizeFirstLetters_1: (str) =>
+    str
+      .split(' ')
+      .map((word) => word[0].toUpperCase() + word.substr(1))
+      .join(' '),
 };
 
 // /***************************************************/
@@ -61,13 +68,6 @@ const stringFunctions = {
 // /***************************************************/
 
 // /***************************************************/
-// // Capitalize first letters - Traversy Media
-// // Solution 1
-// const capitalizeFirstLetters_1 = (str) =>
-//   str
-//     .split(' ')
-//     .map((word) => word[0].toUpperCase() + word.substr(1))
-//     .join(' ');
 
 // // Solution 2 - regex
 // const capitalizeFirstLetters_2 = (str) =>
