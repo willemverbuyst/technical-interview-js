@@ -4,8 +4,12 @@ test('sumAll([1, 5]) returns 15', () => {
   expect(numberFunctions.sumAll([1, 5])).toBe(15);
 });
 
-test('sumAll([1, 5]) returns 15', () => {
+test('sumAll([1, 5]) greater than 6', () => {
   expect(numberFunctions.sumAll([1, 5])).toBeGreaterThanOrEqual(6);
+});
+
+test('sumAll([1, 2]) equal to 3', () => {
+  expect(numberFunctions.sumAll([1, 2])).toBe(3);
 });
 
 test('reverseNumber(3456) returns 6543', () => {
