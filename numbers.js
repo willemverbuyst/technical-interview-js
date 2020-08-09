@@ -1,17 +1,20 @@
+const numberFunctions = {
+  // Sum all numbers in a range
+  sumAll: (arr) => {
+    let total = 0;
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+
+    for (let i = min; i <= max; i++) {
+      total += i;
+    }
+    return total;
+  },
+};
+
 /***************************************************/
-// Sum all numbers in a range
-function sumAll(arr) {
-  let total = 0;
-  const min = Math.min(...arr);
-  const max = Math.max(...arr);
 
-  for (let i = min; i <= max; i++) {
-    total += i;
-  }
-  return total;
-}
-
-console.log(sumAll([1, 5]));
+// console.log(sumAll([1, 5]));
 
 // returns
 // 15
@@ -58,3 +61,5 @@ fizzBuzz();
 // FizzBuzz
 // 16
 // ...
+
+module.exports = numberFunctions;
