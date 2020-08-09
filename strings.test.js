@@ -48,6 +48,10 @@ test('reverseString_2 "Vanilla JavaScript" returns "tpircSavaJ allinaV"', () => 
   );
 });
 
+test('Length "Fiets" reverseString_2 "Fiets"', () => {
+  expect(stringFunctions.reverseString_2('Fiets').length).toBe('Fiets'.length);
+});
+
 test('isPalindrome "racecar" returns true', () => {
   expect(stringFunctions.isPalindrome('racecar')).toBe(true);
 });
