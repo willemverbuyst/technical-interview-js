@@ -39,3 +39,19 @@ test('fizzBuzz() returns [1,2, "Fizz", 4, "Buzz", 6, 7, 8, "Fizz", "Buzz", 11, "
     'FizzBuzz',
   ]);
 });
+
+test('fizzBuzz() returns 15', () => {
+  expect(numberFunctions.fizzBuzz()).toHaveLength(15);
+});
+
+test('result of fizzBuzz() does not contains 16 and 17', () => {
+  const expected = [16, 17];
+  expect(numberFunctions.fizzBuzz()).toEqual(
+    expect.not.arrayContaining(expected)
+  );
+});
+
+test("result of fizzBuzz() contains 1, 2, 'Fizz', 'Buzz' and 'FizzBuzz'", () => {
+  const expected = [1, 2, 'Fizz', 'Buzz', 'FizzBuzz'];
+  expect(numberFunctions.fizzBuzz()).toEqual(expect.arrayContaining(expected));
+});
