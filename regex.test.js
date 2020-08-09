@@ -29,3 +29,13 @@ test("replaceWordInString('Today I will learn regular expressions','Today','Tomo
     )
   ).toBe('Tomorrow I will learn regular expressions');
 });
+
+test("replaceWordInString('Today I will learn regular expressions','Today','Tomorrow') returns 'Tomorrow I will learn regular expressions'", () => {
+  expect(
+    regexFunctions.replaceWordInString(
+      'Today I will learn regular expressions',
+      'Today',
+      'Tomorrow'
+    )
+  ).not.toBe('Today I will learn regular expressions');
+});
