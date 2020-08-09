@@ -69,3 +69,15 @@ test('pairDNA("CTCTA") returns [["C","G"],["T","A"],["C","G"],["T","A"],["A","T"
     ['A', 'T'],
   ]);
 });
+
+test('pairDNA("CTCTA") returns true', () => {
+  const DNA = 'CTCTA';
+  const dnaPair = [
+    ['C', 'G'],
+    ['T', 'A'],
+    ['C', 'G'],
+    ['T', 'A'],
+    ['A', 'T'],
+  ];
+  expect(arrayFunctions.pairDNA(DNA).length).toEqual(dnaPair.length);
+});
