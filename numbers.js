@@ -13,35 +13,22 @@ const numberFunctions = {
   // Reverse number - Traversy Media
   reverseNumber: (num) =>
     parseInt(num.toString().split('').reverse().join('')) * Math.sign(num),
+  // FizzBuzz - Traversy Media
+  fizzBuzz: () => {
+    let arr = [];
+    for (let i = 1; i <= 15; i++) {
+      if (i % 15 === 0) {
+        arr.push('FizzBuzz');
+      } else if (i % 5 === 0) {
+        arr.push('Buzz');
+      } else if (i % 3 === 0) {
+        arr.push('Fizz');
+      } else {
+        arr.push(i);
+      }
+    }
+    return arr;
+  },
 };
-
-// /***************************************************/
-// // FizzBuzz - Traversy Media
-// const fizzBuzz = () => {
-//   for (let i = 1; i <= 100; i++) {
-//     if (i % 15 === 0) {
-//       console.log('FizzBuzz');
-//     } else if (i % 5 === 0) {
-//       console.log('Buzz');
-//     } else if (i % 3 === 0) {
-//       console.log('Fizz');
-//     } else {
-//       console.log(i);
-//     }
-//   }
-// };
-
-// fizzBuzz();
-// // returns
-// // 1
-// // 2
-// // Fizz
-// // 4
-// // Buzz
-// // ...
-// // 14
-// // FizzBuzz
-// // 16
-// // ...
 
 module.exports = numberFunctions;
