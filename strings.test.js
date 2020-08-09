@@ -88,3 +88,9 @@ test("capitalizeFirstLetters_1('I love javascript') returns 'I Love Javascript'"
     'I Love Javascript'
   );
 });
+
+test("capitalizeFirstLetters_2('today is your lucky day') returns 'Today Is Your Lucky Day'", () => {
+  expect(
+    stringFunctions.capitalizeFirstLetters_2('today is your lucky day')
+  ).toBe('Today Is Your Lucky Day');
+});

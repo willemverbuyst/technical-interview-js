@@ -34,6 +34,9 @@ const stringFunctions = {
       .split(' ')
       .map((word) => word[0].toUpperCase() + word.substr(1))
       .join(' '),
+  // Solution 2 - regex
+  capitalizeFirstLetters_2: (str) =>
+    str.replace(/\b[a-z]/gi, (letter) => letter.toUpperCase()),
 };
 
 // /***************************************************/
@@ -62,26 +65,5 @@ const stringFunctions = {
 // // true
 // // true
 // // false
-
-// /***************************************************/
-
-// /***************************************************/
-
-// /***************************************************/
-
-// // Solution 2 - regex
-// const capitalizeFirstLetters_2 = (str) =>
-//   str.replace(/\b[a-z]/gi, (letter) => letter.toUpperCase());
-
-// console.log(capitalizeFirstLetters_1('I love javascript'));
-// console.log(capitalizeFirstLetters_1('today is you lucky day'));
-// console.log(capitalizeFirstLetters_2('I love javascript'));
-// console.log(capitalizeFirstLetters_2('today is you lucky day'));
-
-// // returns
-// // I Love Javascript
-// // Today Is Your Lucky Day
-
-// /***************************************************/
 
 module.exports = stringFunctions;
