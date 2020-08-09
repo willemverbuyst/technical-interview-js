@@ -20,6 +20,13 @@ const stringFunctions = {
       charObj[a] > charObj[b] ? a : b
     );
   },
+  // Find missing letter
+  findMissingLetter: (str) => {
+    const alpha = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    const start = alpha.indexOf(str[0]);
+    const end = alpha.indexOf(str[str.length - 1]);
+    return alpha.slice(start, end + 1).filter((l) => str.indexOf(l) === -1)[0];
+  },
 };
 
 // /***************************************************/
@@ -50,23 +57,6 @@ const stringFunctions = {
 // // false
 
 // /***************************************************/
-// // Find missing letter
-// const findMissingLetter = (str) => {
-//   const alpha = 'abcdefghijklmnopqrstuvwxyz'.split('');
-//   const start = alpha.indexOf(str[0]);
-//   const end = alpha.indexOf(str[str.length - 1]);
-
-//   return alpha.slice(start, end + 1).filter((l) => str.indexOf(l) === -1)[0];
-// };
-
-// console.log(findMissingLetter('abce'));
-// console.log(findMissingLetter('ghijklmnpqrstu'));
-// console.log(findMissingLetter('abcd'));
-
-// // returns
-// // 'd'
-// // 'o'
-// // undefined
 
 // /***************************************************/
 

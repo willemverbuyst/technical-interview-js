@@ -70,3 +70,15 @@ test('findMaxCharacters("goooooood morning") returns o', () => {
 test('findMaxCharacters() is defined', () => {
   expect(stringFunctions.findMaxCharacters('goooooood morning')).toBeDefined();
 });
+
+test("findMissingLetter('abce') returns 'd'", () => {
+  expect(stringFunctions.findMissingLetter('abce')).toBe('d');
+});
+
+test("findMissingLetter('ghijklmnpqrstu') returns 'o'", () => {
+  expect(stringFunctions.findMissingLetter('ghijklmnpqrstu')).toBe('o');
+});
+
+test("findMissingLetter('abcd') returns undefined", () => {
+  expect(stringFunctions.findMissingLetter('abcd')).toBe(undefined);
+});
