@@ -16,6 +16,10 @@ test('reverseNumber(321) returns 123', () => {
   expect(numberFunctions.reverseNumber(321)).toBe(123);
 });
 
+test('Length reverseNumber(321) is equal to 3', () => {
+  expect(numberFunctions.reverseNumber(321).toString().length).toBe(3);
+});
+
 test('reverseNumber(-1233456) returns -6543321', () => {
   expect(numberFunctions.reverseNumber(-1233456)).toBe(-6543321);
 });
